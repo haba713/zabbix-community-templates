@@ -935,11 +935,6 @@ zabbix_export:
                   expression: 'last(/SNMP NetApp cDot/snapmirrorRelStatus[{#SNMPINDEX}])>=11'
                   name: 'SnapMirror {#SNAPINDEX} is having problems'
                   priority: HIGH
-                -
-                  uuid: b4126cf44d6a4eff8338ce9f51d36294
-                  expression: 'last(/SNMP NetApp cDot/snapmirrorRelStatus[{#SNMPINDEX}])<>0'
-                  name: 'SnapMirror {#SNAPINDEX} is not idle'
-                  priority: INFO
           graph_prototypes:
             -
               uuid: a21ad964e10a4795b11ac08764520a6a
